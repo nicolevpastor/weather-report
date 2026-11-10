@@ -1,0 +1,21 @@
+
+#title-section {
+    background-color:blanchedalmond;
+}
+
+#weather-report-title {
+    text-align:center;
+    font-family: 'Rubik', sans-serif; 
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#temperature {
+  background-color: #edf5ff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+

@@ -1,32 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Report</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
     <script defer src="./src/index.js"></script>
     <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="title-section">
-        <h1 id="weather-report-title">Weather Report</h1>
+      <h1 id="weather-report-title">Weather Report</h1>
     </section>
     <section id="location-info">
-        <img id="location-picture" alt="location image" src="./assets/cloudyskies.png">
+      <img
+        id="location-picture"
+        alt="location image"
+        src="./ada-project-docs/assets/cloudyskies.png"
+      />
     </section>
-    <section id="temperature">
-        <p>Temperature</p>
+    <section id="temperature" class = "temperature-card">
+     <p>Temperature</p>
+     <p id="numeric-temp"></p>
+
+
+      <button type="button" id="increase_temp">+</button>
+      <button type="button" id="decrease_temp">-</button>
     </section>
     <section id="Precipitation">
-        <p>Precipitation</p>
+      <p>Precipitation</p>
     </section>
     <section id="Wind-direction-and-Speed">
-        <p>Wind Direction</p>
-        <p>Wind Speed</p>
+      <p>Wind Direction</p>
+      <p>Wind Speed</p>
     </section>
-</body>
+  </body>
 </html>
