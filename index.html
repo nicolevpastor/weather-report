@@ -26,12 +26,18 @@
       />
     </section>
     <section id="temperature" class = "temperature-card">
-     <p>Temperature</p>
-     <p id="numeric-temp"></p>
-
-
-      <button type="button" id="increase_temp">+</button>
-      <button type="button" id="decrease_temp">-</button>
+     <div class="temperature-header">
+        <h2>Temperature</h2>
+          <div class="unit-toggle">
+          <button type="button" id="celsius">°C</button>
+          <button type="button" id="fahrenheit">°F</button>
+          </div>
+      </div>
+      <p id="numeric-temp"></p>
+      <div class="temperature-controls">
+        <button type="button" id="decrease_temp">-</button>
+        <button type="button" id="increase_temp">+</button>
+      </div>
     </section>
     <section id="Precipitation">
       <p>Precipitation</p>

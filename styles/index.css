@@ -15,7 +15,45 @@
   border-radius: 20px;
   padding: 30px;
   width: 350px;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin: 30px auto;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.temperature-header h2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.temperature-header h2 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.unit-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 5px;
+}
+
+#numeric-temp {
+  display: inline-block;
+  font-size: 40px;
+  padding: 12px 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.temperature-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
