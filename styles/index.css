@@ -10,7 +10,7 @@
     font-weight: bold;
 }
 
-#temperature {
+#temperature, #precipitation, #wind-direction-and-Speed {
   background-color: #edf5ff;
   border-radius: 20px;
   padding: 30px;
@@ -22,7 +22,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.temperature-header h2{
+.temperature-header, .precipiation-header h2{
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@
   padding-top: 35px;
 }
 
-.temperature-header h2 {
+.temperature-header, .precipiation-header h2 {
   font-size: 22px;
   margin: 0;
 }
@@ -43,7 +43,7 @@
   gap: 5px;
 }
 
-#numeric-temp {
+#numeric-temp, #precipitation_text, #wind_speed_text, #wind_direction_text{
   display: inline-block;
   font-size: 40px;
   padding: 12px 25px;
