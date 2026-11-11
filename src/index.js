@@ -17,6 +17,18 @@ decreaseTemp.addEventListener("click", () => {
   changeTextColor(temp);
 });
 
+const form = document.getElementById('city-input-field');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+  console.log('formData')
+
+  const city = formData.get('city')
+  document.getElementById('city').textContent = `City: ${city}`
+});
+
 function changeTextColor(temperature) {
   if (temperature >= 80) {
     //document.getElementById("numeric-temp").style.color = "red";
