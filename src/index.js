@@ -137,3 +137,24 @@ function convertTemp(currentTemp, units) {
   }
 }
 
+
+
+
+//users select what sky to display
+const skySelect = document.getElementById('sky-select');
+const skyDisplay = document.getElementById('sky-preview');
+//want to update the sky display
+skySelect.addEventListener('change', () => {
+  const selectedSky = skySelect.value;
+
+  if (selectedSky === 'sunny') {
+    skyDisplay.textContent = '☁️ ☁️ ☁️ ☀️ ☁️ ☁️';
+  } else if (selectedSky === 'cloudy') {
+    skyDisplay.textContent = '☁️☁️ ☁️ ☁️☁️ ☁️ 🌤 ☁️ ☁️☁️';
+  } else if (selectedSky === 'rainy') {
+    skyDisplay.textContent = '🌧🌈⛈🌧🌧💧⛈🌧🌦🌧💧🌧🌧';
+  } else if (selectedSky === 'snowy') {
+    skyDisplay.textContent = '🌨❄️🌨🌨❄️❄️🌨❄️🌨❄️❄️🌨🌨';
+  }
+
+});

@@ -17,7 +17,7 @@
   <body>
     <section id="title-section">
       <h1 id="weather-report-title">Weather Report</h1>
-      <h2 id="city">City: </h2>
+      <h2 id="city">Choose a city: </h2>
       <form id="city-input-field">
         <input type="text" id="city-input" placeholder="Enter city here" name="city" required/>
         <button>Submit</button>
@@ -34,7 +34,7 @@
         src="./ada-project-docs/assets/cloudyskies.png"
       />
     </section>
-    <section id="temperature" class = "temperature-card">
+    <section id="temperature">
      <div class="temperature-header">
         <h2>Temperature</h2>
           <div class="unit-toggle">
@@ -57,5 +57,16 @@
       <p id="wind_direction_text">Wind Direction</p>
       <p id="wind_speed_text">Wind Speed</p>
     </section>
+    <section id = "sky">
+      <h2>Sky</h2>
+      <select id="sky-select">
+        <option value='sunny'>Sunny</option>
+        <option value='cloudy'>Cloudy</option>
+        <option value='rainy'>Rainy</option>
+        <option value='snowy'>Snowy</option>
+      </select>
+
+  <p id="sky-preview">☀️</p>
+      </div>
   </body>
 </html>

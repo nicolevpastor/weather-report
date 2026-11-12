@@ -1,6 +1,47 @@
 
 #title-section {
     background-color:blanchedalmond;
+    text-align: center;
+    padding: 25px;
+}
+
+#city {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#city-input-field input {
+  padding: 12px 15px;
+  border: 1px solid #d5c5b4;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+#city-input-field button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.2s;
+}
+#city-input-field button[type="submit"] {
+  background-color: #b8d8f8;
+  color: #253b56;
+}
+
+#city-input-field button[type="submit"]:hover {
+  background-color: #91c2f0;
+}
+
+#resetBtn {
+  background-color: #f5f0e9;
+  color: #5c5047;
+}
+
+#resetBtn:hover {
+  background-color: #e6dbce;
 }
 
 #weather-report-title {
@@ -10,7 +51,7 @@
     font-weight: bold;
 }
 
-#temperature, #precipitation, #wind-direction-and-Speed {
+#temperature, #precipitation, #wind-direction-and-Speed, #sky {
   background-color: #edf5ff;
   border-radius: 20px;
   padding: 30px;
@@ -55,5 +96,16 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+#sky-display {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+#sky-select {
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #b8d4f0;
 }
 
