@@ -103,14 +103,27 @@ const fahrenheitButton = document.getElementById('fahrenheit')
 const celsiusButton = document.getElementById('celsius')
 
 fahrenheitButton.addEventListener("click", () => {
-  temp = convertTemp(temp, 'celsius');
-  document.getElementById('numeric-temp').textContent = `${Math.round(temp)}°F`;
+  temp = convertTemp(temp, 'fahrenheit', units);
+  document.getElementById('numeric-temp').textContent =
+    `${Math.round(temp)}°F`;
 });
 
 celsiusButton.addEventListener("click", () => {
-  temp = convertTemp(temp, 'fahrenheit');
-  document.getElementById('numeric-temp').textContent = `${Math.round(temp)}°C`;
+  temp = convertTemp(temp, 'celsius', units);
+  document.getElementById('numeric-temp').textContent =
+    `${Math.round(temp)}°C`;
 });
+
+function convertTemp(currentTemp, unitToChangeTo, currentUnit) {
+  if (unitToChangeTo === 'fahrenheit' && currentUnit === 'celsius') {
+    units = 'fahrenheit';
+    return (currentTemp * 9 / 5) + 32;
+
+  } else if (unitToChangeTo === 'celsius' && currentUnit === 'fahrenheit') {
+    units = 'celsius';
+    return (currentTemp - 32) * 5 / 9;
+  }
+}
 
 //change color for temperature text
 function changeTextColor(temperature) {
@@ -135,16 +148,6 @@ function changeTextColor(temperature) {
     document.getElementById('numeric-temp').style.backgroundColor = 'teal';
     document.getElementById('landscape_text').textContent = '🌲🌲⛄️🌲⛄️🍂🌲🍁🌲🌲⛄️🍂🌲'
   } 
-}
-
-function convertTemp(currentTemp, units) {
-  if (units === 'fahrenheit') {
-    // Fahrenheit to Celsius
-    return (currentTemp - 32) * 5 / 9;
-  } else if (units === 'celsius') {
-    // Celsius to Fahrenheit
-    return (currentTemp * 9 / 5) + 32;
-  }
 }
 
 
