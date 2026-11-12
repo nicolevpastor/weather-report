@@ -192,7 +192,6 @@ img {
     display: grid;
     position: relative;
     width: 100%;
-    max-width: 1000px; /* Adjust size as needed */
 }
 
   /* Force both the image and the grid to stack in the exact same cell */
