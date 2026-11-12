@@ -1,3 +1,7 @@
+* {
+  font-family: 'Rubik', sans-serif; 
+}
+
 
 #title-section {
     background-color:blanchedalmond;
@@ -46,7 +50,6 @@
 
 #weather-report-title {
     text-align:center;
-    font-family: 'Rubik', sans-serif; 
     font-size: 4rem;
     font-weight: bold;
 }
