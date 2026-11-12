@@ -1,13 +1,83 @@
 * {
   font-family: 'Rubik', sans-serif; 
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 #title-section {
     background-color:blanchedalmond;
     text-align: center;
     padding: 25px;
 }
+
+#title-section {
+  background-color: #DCECF5;
+  text-align: center;
+  padding: 50px 25px 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.garden {
+  position: absolute;
+  bottom: 95px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 28px;
+}
+
+.left-side {
+  left: 20px;
+}
+
+.right-side {
+  right: 20px;
+}
+
+.garden span:nth-child(odd) {
+  transform: translateY(-15px) rotate(-12deg);
+}
+
+.garden span:nth-child(even) {
+  transform: translateY(5px) rotate(10deg);
+}
+
+#landscape {
+  background-color: #f0f7e8;
+  border: 2px solid #a9c79a;
+  border-radius: 15px;
+  padding: 15px 25px;
+  width: fit-content;
+  max-width: 90%;
+  margin: 35px auto 0;
+  text-align: center;
+}
+#landscape h3 {
+  font-size: 18px;
+  color: #426c3b;
+  margin: 0 0 10px;
+}
+#landscape_text {
+  font-size: 24px;
+  margin: 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+
+
 
 #city {
   font-size: 28px;
@@ -16,7 +86,7 @@
 
 #city-input-field input {
   padding: 12px 15px;
-  border: 1px solid #d5c5b4;
+  border: 1px solid #cbdde7;
   border-radius: 12px;
   font-size: 16px;
 }

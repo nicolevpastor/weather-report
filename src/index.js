@@ -43,6 +43,7 @@ const resetButton = document.getElementById('resetBtn');
 resetButton.addEventListener('click', () => {
   form.reset();
   document.getElementById('city').textContent = 'City:';
+  document.getElementById('landscape_text').textContent = '';
 });
 
 form.addEventListener('submit', async function(event) {
