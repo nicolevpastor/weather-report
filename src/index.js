@@ -63,10 +63,20 @@ form.addEventListener('submit', async function(event) {
 
   //set temp on page to location's current temperature
   document.getElementById('numeric-temp').textContent = `${Math.round((weatherData.main.temp - 273.15) * (9 / 5) + 32)}°F`;
+  temp = Math.round((weatherData.main.temp - 273.15) * (9 / 5) + 32)
   //set wind speed to location's wind speed
   document.getElementById('wind_speed_text').textContent = `Wind speed: ${Math.round(weatherData.wind.speed)}`;
   document.getElementById('wind_direction_text').textContent = `Wind direction: ${Math.round(weatherData.wind.deg)} degrees`;
   changeTextColor(Math.round(weatherData.main.temp - 273.15))
+  if(weatherData.rain) {
+    if(weatherData.rain['1h'] < 2.5) {
+      document.getElementById('precipitation_text').textContent = `Precipitation: Light Rain`
+    } else if (weatherData.rain['1h'] < 7.5) {
+      document.getElementById('precipitation_text').textContent = `Precipitation: Rain`
+    } else {
+      document.getElementById('precipitation_text').textContent = `Precipitation: Heavy Rain`
+    }
+  }
 });
 
 
