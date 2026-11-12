@@ -54,6 +54,11 @@
     font-weight: bold;
 }
 
+#weather-description {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 #temperature, #precipitation, #wind-direction-and-Speed, #sky {
   background-color: #edf5ff;
   border-radius: 20px;
@@ -112,3 +117,19 @@
   border: 1px solid #b8d4f0;
 }
 
+
+#weather-info {
+    display: grid;
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Adjust size as needed */
+}
+
+  /* Force both the image and the grid to stack in the exact same cell */
+  #location-picture,
+  .grid-overlay {
+    grid-area: 1 / 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
